@@ -43,7 +43,7 @@ RUN mkdir -p /var/log/supervisor
 
 RUN echo Europe/Berlin > /etc/timezone && dpkg-reconfigure tzdata
 
-COPY .fehm.cfg /opt/fhem/fhem.cfg
+COPY fhem.cfg /opt/fhem/fhem.cfg
 
 COPY ./etc/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
