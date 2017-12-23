@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d --name fhem -p 7072:7072 -p 8083:8083 -p 8084:8084 -p 8085:8085 --privileged -v /dev/ttyACM0:/dev/ttyACM0  schristann/fhem
